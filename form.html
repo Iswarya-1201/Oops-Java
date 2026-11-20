@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Application Form</title>
+        <h1>Application Form</h1>
+        
+        <style>
+            .id{
+                background-color: aqua;
+                position: relative;
+            }
+            h1{
+                text-align: center;
+            }
+            .form{
+            border: 20px solid black;
+            width: 400px;
+            border-radius: 20px;
+            border-bottom: 100px;
+           
+            border-left: 20px;
+            border-right: 20px;
+            color: black;
+            background-color: rgb(182, 182, 238);
+            padding: 20px;
+            margin: 400px;
+            margin-top:20px ;
+
+            }
+
+        </style>
+    </head>
+    <body class="id">
+        <div class="form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name"><br><br>
+            <label for="email" >Email id</label>
+            <input type="email" id="email" required><br><br>
+            <label for="Number">Phone number</label>
+            <input type="tel" id="Number"><br><br>
+            <label for ="jobrole">Job Role</label>
+            <select id="jobrole" name="role">
+                <option value="">Select role </option>
+                <option value="java Developer">java Developer</option>
+                <option value="python Developer">Python Developer</option>
+                <option value="non it">non it</option>
+
+            </select><br><br>
+
+            <label>Experience</label>
+            <input type="radio" name="experience" value="4years">4yeras
+            <input type="radio"name="experience" value="3years">3years<br><br>
+
+            <label>Technical Skills</label>
+            <input type="checkbox" name="skills" value="java">java<br><br>
+            <input type="checkbox" name="skils" value="python">python<br><br>
+            <input type="checkbox" name="skils" value="datascience">datascience<br><br>
+
+            <label for="resume">Resume Upload </label>
+            <input type="file" id="resume"name="resume"><br><br>
+
+            <label for="txtarea">Address</label>
+            <textarea id="txtarea" rows="5" cols="30" name="area" ></textarea><br><br>
+
+
+    <button type="submit">submit</button>
+
+
+        </form>
+        </div>
+        
+
+    </body>
+</html>
